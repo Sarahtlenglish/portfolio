@@ -1,0 +1,1214 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: helvetica;
+}
+
+body {
+background-position: top;
+background-blend-mode:darken;
+background-repeat: no-repeat;
+background-size: 100%;
+background-attachment:fixed;
+height: 600px;
+}
+
+.OMMIG{
+  background-image: linear-gradient(180deg, rgba(19,47,70,1) 1%, rgba(95,139,181,1) 57%, rgba(172,193,213,1) 86%, rgba(255,255,255,1) 100%);
+}
+
+.portfolio{
+	  background-color: #11324D;
+}
+
+nav {
+	position: sticky;
+	z-index: 99;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color:transparent;
+	color: white;
+	padding: 1rem 1.5rem;
+}
+
+nav h1 a {
+	letter-spacing: 5px;
+	padding: 0.5rem 1rem;
+	padding-right: calc(1rem - 5px);
+	border: 3px solid white;
+	height: 3rem;
+	color: white;
+	text-decoration: none;
+}
+
+nav h1:hover {
+	color: deepskyblue;
+	transition: 0.4s;
+}
+
+.menu {
+	display: none;
+	align-items: center;
+	margin: 0 -1rem;
+	font-size: 1.2rem;
+	padding: 1rem;
+}
+
+.menu a {
+	margin: 0 1rem;
+	color: white;
+	text-decoration: none;
+	transition: 0.4s;
+}
+
+.menu a:hover {
+	color:	#003366;
+}
+
+.hamburger {
+	appearance: none;
+	outline: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	display: block;
+	width: 2rem;
+	height: 2rem;
+}
+
+.hamburger span {
+	color: #FFF;
+	font-size: 2rem;
+}
+
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 98;
+
+	padding-top: 6rem;
+	opacity: 0;
+	transform: translateY(-100%);
+	background-color:#eee;
+	color: black;
+	transition: 0.3s;
+}
+
+.mobile-menu.is-open {
+	opacity: 2;
+	transform: translateY(0);
+}
+
+.mobile-menu a {
+	display: block;
+	padding: 1rem;
+	color: rgba(70,119,109,1);
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.4rem;
+	transition: 0.4s;
+}
+
+.mobile-menu a:hover {
+	color:rgba(70,119,109,1);
+	font-weight: bolder;
+	background-color: #eee;
+}
+
+
+
+.center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		 }
+
+footer {
+		padding: 1vw;
+	  font-size: 0.8rem;
+	  text-align: center;
+		margin-top: 200px;
+		font-weight: lighter;
+		background-color:rgba(70,119,109,1);
+		 }
+
+
+
+
+/*desktop*/
+
+@media (min-width: 992px) {
+
+	.mobile-menu, .hamburger {
+		display: none;
+	}
+
+
+	.menu {
+		display: flex;
+	}
+
+/*om mig siden*/
+
+ div.ommig-box {
+   height: 38vw;
+   width: 58vw;
+   margin-top: 6vw;
+   margin-right: 20vw;
+   margin-left: 5vw;
+   margin-bottom: 10vw;
+   background-color:#193A55;
+   border-radius: 5px;
+   border:1px solid transparent;
+   box-shadow:  0 0px 0px 0 black, 0 20px 40px 0 black;
+}
+
+	h2.overskrift {
+		color: white;
+		font-size: 2vw;
+		font-weight: normal;
+		margin-top: 6vw;
+		margin-left: 2vw;
+	}
+
+	h1.h1 {
+		color: white;
+		font-size: 4vw;
+		margin-left: 2vw;
+		margin-top: 2vw;
+	}
+
+	h2.tekst {
+		color: white;
+		font-size: 1.3vw;
+		font-weight: normal;
+		margin-top: 1.7vw;
+		margin-left: 2vw;
+		font-weight: lighter;
+		width: 50vw;
+
+		}
+
+	h2.tekst2{
+		color: white;
+		font-size: 1.3vw;
+		font-weight: normal;
+		margin-top: 9vw;
+		margin-left: 2vw;
+		font-weight: lighter;
+		width: 50vw;
+		}
+
+
+	img.profil {
+		float: right;
+		margin-top: 5vw;
+		margin-right: 12vw;
+
+}
+
+  img.ikon {
+		height: 65px;
+		width: 460px;
+		margin-top: 2vw;
+		margin-left: 1.6vw;
+}
+
+
+/*portfolio siden*/
+
+	h1.portfolio {
+		color: white;
+		font-size: 5vw;
+		margin-top: 7vw;
+		margin-left: 5vw;
+		letter-spacing: 2px;
+	}
+
+	div.content-box1 {
+		height: 36vw;
+		width: 75vw;
+		margin-top: 9vw;
+		margin-left: 20vw;
+		margin-bottom: 10vw;
+		background-color:#193A55;
+		border-radius: 10px;
+		border:1px solid transparent;
+		box-shadow:  0 0px 0px 0 black, 0 20px 40px 0 black;
+
+		}
+
+	div.content-box2 {
+	 height: 36vw;
+ 	 width: 75vw;
+	 margin-top: 6vw;
+	 margin-right: 20vw;
+   margin-left: 5vw;
+	 margin-bottom: 10vw;
+	 background-color:#193A55;
+	 border-radius: 10px;
+	 border:1px solid transparent;
+	 box-shadow:  0 0px 0px 0 black, 0 20px 40px 0 black;
+
+			}
+
+	div.content-box3 {
+	 height: 40vw;
+   width: 75vw;
+	 margin-top: 6vw;
+	 margin-left: 20vw;
+	 margin-bottom: 10vw;
+	 background-color:#193A55;
+	 border-radius: 10px;
+	 border:1px solid transparent;
+	 box-shadow:  0 0px 0px 0 black, 0 20px 40px 0 black;
+
+				 		  }
+
+
+	div.b-box1 {
+		height: 40vw;
+		width: 90vw;
+		margin-top: 6vw;
+		margin-left: 5vw;
+		margin-bottom: 10vw;
+	}
+
+	div.b-box2 {
+	 height: 35vw;
+	 width: 90vw;
+	 margin-top: 10vw;
+	 margin-left: 5vw;
+	 margin-bottom: 5vw;
+	}
+
+	h1.overskrift1 {
+		color: white;
+		margin-left:5vw;
+		margin-top: 5vw;
+		font-size: 2.8vw;
+	}
+	h1.overskrift2 {
+		color: white;
+		margin-right:13vw;
+		margin-top: 4vw;
+		font-size: 2.8vw;
+		float: right;
+	}
+
+	h1.overskrift3 {
+		color: white;
+		margin-left:5vw;
+		margin-top: 4vw;
+		font-size: 2.8vw;
+		float: left;
+	}
+
+	h1.overskrift4 {
+		color: white;
+		margin-left:5vw;
+		margin-top: 0.5vw;
+		font-size: 2.8vw;
+		float: left;
+	}
+
+	h1.overskrift5 {
+		color: white;
+		margin-left:5vw;
+		margin-top: 4vw;
+		font-size: 2.8vw;
+		float: left;
+	}
+
+
+	h2.client1 {
+		color:white;
+		margin-left: 5vw;
+		margin-top: 1vw;
+		font-size: 1.9vw;
+		font-weight: normal;
+	}
+	h2.client2 {
+		color:white;
+		margin-right: 12.5vw;
+		margin-top: 1vw;
+		font-size: 1.9vw;
+		font-weight: normal;
+		float: right;
+	}
+
+	h2.client3 {
+		color:white;
+		margin-left: 5vw;
+		margin-top: 17.5vw;
+		font-size: 1.9vw;
+		font-weight: normal;
+
+	}
+
+	h2.client4 {
+ 	color:white;
+ 	margin-left: 5vw;
+ 	margin-top: 1vw;
+ 	font-size: 1.9vw;
+ 	font-weight: normal;
+ 	float: left;
+
+  }
+
+	h2.client5 {
+		color:white;
+		margin-left: 5vw;
+		margin-top: 1vw;
+		font-size: 2vw;
+		font-weight: normal;
+		float: left;
+
+	}
+
+	h3.beskrivelse1 {
+		color: white;
+		margin-top: 2vw;
+		margin-left: 5vw;
+		font-weight: lighter;
+		font-size: 1.5vw;
+		width: 25vw;
+	}
+
+	h3.beskrivelse2 {
+		color: white;
+		margin-top: 1vw;
+		margin-right: 10.5vw;
+		font-weight: lighter;
+		font-size: 1.5vw;
+		float: right;
+		width: 25.5vw;
+	}
+
+	h3.beskrivelse3 {
+		color: white;
+		margin-top: 1vw;
+		margin-left: 5vw;
+		font-weight: lighter;
+		font-size: 1.5vw;
+		float: left;
+		width: 22.5vw;
+	}
+
+	h3.beskrivelse4 {
+		color: white;
+		margin-top: 0.7vw;
+		margin-left: 5vw;
+		font-weight: lighter;
+		font-size: 1.8vw;
+		float: left;
+		width: 25vw;
+	}
+
+
+
+	h3.beskrivelse5 {
+		color: white;
+		margin-top: 1vw;
+		margin-left: 5vw;
+		font-weight: lighter;
+		font-size: 1.8vw;
+		float: left;
+		width: 23vw;
+	}
+
+	img.studiebolig {
+		height: 20vw;
+		width: 34vw;
+		margin-top: 7vw;
+		float: right;
+		margin-right: 5vw;
+	}
+
+	img.jul {
+		height: 32vw;
+		width: 25vw;
+		margin-left: 18vw;
+		margin-top: 4vw;
+		float:left;
+	}
+
+	img.mig1 {
+		height: 27vw;
+		width: 19vw;
+		margin-top: 4vw;
+		margin-right: 9vw;
+		float:right;
+
+	}
+	video.haj {
+ 	 width: 37vw;
+ 	 height: 30vw;
+ 	 margin-top: 0vw;
+ 	 margin-left: 10vw;
+	 float: left;
+  }
+
+	video.promo {
+		width: 37vw;
+  	height: 30vw;
+    margin-top: 3vw;
+  	margin-right: 5vw;
+		float: right
+	}
+	/*kontakt siden*/
+
+  h1.kontakt {
+ 	 color: white;
+ 	 font-size: 5vw;
+ 	 margin-top: 5vw;
+ 	 margin-left: 35vw;
+  }
+
+  p.formere {
+ 	 color: white;
+ 	 font-size: 1.8vw;
+ 	 font-weight: lighter;
+ 	 text-align: center;
+ 	 margin-top: 1vw;
+ 	 margin-bottom: 3vw;
+  }
+
+	p.info {
+		color: white;
+		font-size: 1.8vw;
+		margin-top: 1vw;
+		text-align: center;
+		font-weight: lighter;
+	}
+
+
+ img.ikon2 {
+	 width: 4vw;
+	 height: 4vw;
+	 margin-left: 47.8vw;
+	 margin-top: 2vw;
+
+ }
+
+
+
+}
+
+
+/*Phone*/
+
+@media (max-width: 700px){
+
+	body {
+		position: relative;
+		background-size: 100%;
+	}
+
+
+/* om mig siden*/
+
+div.ommig-box {
+	height: 120vw;
+	width: 68vw;
+	margin-top: 6vw;
+	margin-right: 20vw;
+	margin-left: 5vw;
+	margin-bottom: 10vw;
+	background-color:#193A55;
+	border-radius: 10px;
+	border:1px solid transparent;
+	box-shadow:  0 0px 0px 0 black, 0 20px 40px 0 black;
+
+				}
+ h2.overskrift {
+ 	color: white;
+ 	font-size: 4vw;
+ 	font-weight: normal;
+ 	margin-top: 5vw;
+ 	margin-left: 4vw;
+ 	}
+
+ h1.h1 {
+ 	color: white;
+ 	font-size: 5vw;
+ 	margin-left: 4vw;
+ 	margin-top: 4vw;
+  margin-bottom: 3vw;
+
+ 	}
+
+ 	h2.tekst {
+ 	color: white;
+ 	font-size: 3.8vw;
+ 	font-weight: normal;
+ 	margin-top: 1.7vw;
+ 	margin-left: 4vw;
+	margin-right: 2vw;
+ 	font-weight: lighter;
+	width: 52vw;
+ }
+
+ h2.tekst2{
+	 color: white;
+	 font-size: 3.8vw;
+	 margin-top: 4vw;
+	 margin-left: 2vw;
+	 width: 90vw;
+ }
+
+ 	img.profil {
+ 		float: right;
+ 		margin-top: 50vw;
+ 		margin-right: 8vw;
+		height: 80vw;
+
+ }
+
+  img.ikon {
+ 	 height: 10vw;
+ 	 width: 80vw;
+ 	 margin-top: 0vw;
+ 	 margin-left: 1.8vw;
+
+ }
+
+ img.me {
+	 height: 30vw;
+	 width: 15vw;
+	 margin-top: 15vw;
+	 margin-left: 70vw;
+ }
+
+/* portfolio siden*/
+
+ h1.portfolio {
+	 color: white;
+	 font-size: 10vw;
+	 margin-top: 5vw;
+	 margin-left: 7vw;
+	 letter-spacing: 2px;
+ }
+
+ div.content-box1 {
+	 height: 115vw;
+	 width: 90vw;
+	 margin-top: 7vw;
+	 margin-left: 5vw;
+	 margin-bottom: 10vw;
+	 background-color:#193A55;
+	 border-radius: 10px;
+	 border:1px solid transparent;
+	 box-shadow:  0 0px 0px 0 black, 0 20px 40px 0 black;
+
+	 }
+ div.content-box2 {
+	 height: 130vw;
+	 width: 90vw;
+	 margin-top: 25vw;
+	 margin-left: 5vw;
+	 margin-bottom: 5vw;
+	 background-color:#193A55;
+	 border-radius: 10px;
+	 border:1px solid transparent;
+	 box-shadow:  0 0px 0px 0 black, 0 20px 40px 0 black;
+
+		 }
+
+div.content-box3 {
+	 height: 120vw;
+	 width: 90vw;
+	 margin-top: 0vw;
+	 margin-left: 5vw;
+	 margin-bottom: 5vw;
+	 background-color:#193A55;
+	 border-radius: 10px;
+	 border:1px solid transparent;
+	 box-shadow:  0 0px 0px 0 black, 0 20px 40px 0 black;
+
+				 }
+
+ div.b-box1 {
+	 height: 160vw;
+	 width: 90vw;
+	 margin-top: 6vw;
+	 margin-left: 5vw;
+	 margin-bottom: 5vw;
+ }
+
+ div.b-box2 {
+	height: 125vw;
+	width: 90vw;
+	margin-top: 10vw;
+	margin-left: 5vw;
+	margin-bottom: 5vw;
+ }
+
+ h1.overskrift1 {
+	 color: white;
+	 margin-left:5vw;
+	 margin-top:1vw;
+	 font-size: 5vw;
+ }
+ h1.overskrift2 {
+	 color: white;
+	 margin-right:31vw;
+	 margin-top: 4vw;
+	 font-size: 5vw;
+	 float: right;
+ }
+
+ h1.overskrift3 {
+	 color: white;
+	 margin-right:25vw;
+	 margin-top: 4vw;
+	 font-size: 5vw;
+	 float: right;
+ }
+
+ h1.overskrift4 {
+	color: white;
+	margin-right:35vw;
+	margin-top: 0vw;
+	font-size: 5vw;
+	float: right;
+ }
+
+ h1.overskrift5 {
+ color: white;
+ margin-right:41vw;
+ margin-top: 0vw;
+ font-size: 5vw;
+ float: right;
+ }
+
+ h2.client1 {
+	 color:white;
+	 margin-left: 5vw;
+	 margin-top: 1vw;
+	 font-size: 3.5vw;
+	 font-weight: normal;
+ }
+ h2.client2 {
+	 color:white;
+	 margin-right: 28.5vw;
+	 margin-top: 1vw;
+	 font-size: 3.5vw;
+	 font-weight: normal;
+	 float: right;
+ }
+
+ h2.client3 {
+	 color:white;
+	 margin-left: 26vw;
+	 margin-top: 1vw;
+	 font-size: 3.5vw;
+	 font-weight: normal;
+	 float: left;
+ }
+
+ h2.client4 {
+	color:white;
+	margin-left: 5vw;
+	margin-top: 1vw;
+	font-size: 3.5vw;
+	font-weight: normal;
+	float: left;
+
+ }
+
+ h2.client5 {
+	color:white;
+	margin-left: 5vw;
+	margin-top: 1vw;
+	font-size: 3.5vw;
+	font-weight: normal;
+	float: left;
+
+ }
+ h3.beskrivelse1 {
+	 color: white;
+	 margin-top: 1vw;
+	 margin-left: 5vw;
+	 font-weight: lighter;
+	 font-size: 3.5vw;
+	 width: 45vw;
+ }
+
+ h3.beskrivelse2 {
+	 color: white;
+	 margin-top: 1vw;
+	 margin-right: 22vw;
+	 font-weight: lighter;
+	 font-size: 3.5vw;
+	 float: right;
+	 width: 50vw;
+ }
+
+ h3.beskrivelse3 {
+	color: white;
+	margin-top: 2vw;
+	margin-right: 19vw;
+	font-weight: lighter;
+	font-size: 3.5vw;
+	float: right;
+	width: 45vw;
+}
+
+ h3.beskrivelse4 {
+	color: white;
+	margin-top: 2vw;
+	margin-right: 40vw;
+	font-weight: lighter;
+	font-size: 3.5vw;
+	float: right;
+	width: 45vw;
+}
+
+h3.beskrivelse5 {
+ color: white;
+ margin-top: 2vw;
+ margin-right: 40vw;
+ font-weight: lighter;
+ font-size: 3.5vw;
+ float: right;
+ width: 45vw;
+}
+
+ img.studiebolig {
+	 height: 44vw;
+	 width: 80vw;
+	 margin-top: 5vw;
+	 float: right;
+	 margin-right: 5vw;
+	 margin-bottom: 3vw;
+ }
+
+ img.jul {
+	 height: 80vw;
+	 width: 55vw;
+	 margin-left: 18vw;
+	 margin-top: 10vw;
+	 float:left;
+ }
+
+ img.mig1 {
+	 height: 50vw;
+	 width: 35vw;
+	 margin-top: 5vw;
+	 margin-right: 23vw;
+	 float:right;
+
+ }
+
+ video.haj {
+	 width: 80vw;
+	 height: 50vw;
+	 margin-top: 10vw;
+	 margin-left: 5vw;
+ }
+
+ video.promo {
+	 width: 80vw;
+	 height: 50vw;
+	 margin-top: 5vw;
+	 margin-left: 5vw;
+ }
+
+ /*kontakt siden*/
+
+ h1.kontakt {
+	 color: white;
+	 font-size: 9vw;
+	 margin-top: 15vw;
+	 margin-left: 22vw;
+ }
+
+ p.formere {
+	 color: white;
+	 font-size: 4vw;
+	 font-weight: lighter;
+	 text-align: center;
+	 margin-top: 2vw;
+	 margin-bottom: 5vw;
+ }
+
+ p.info {
+	 color: white;
+	 font-size: 5vw;
+	 margin-top: 1vw;
+	 text-align: center;
+	 font-weight: lighter;
+ }
+
+img.ikon2 {
+	width: 10vw;
+	margin-left: 45vw;
+	margin-top: 5vw;
+}
+
+}
+
+
+/*tablet*/
+
+@media (min-width: 700px) and (max-width: 992px) {
+
+	body {
+		background-image: linear-gradient(180deg, rgba(19,47,70,1) 0%, rgba(102,130,156,1) 56%, rgba(167,190,210,1) 95%, rgba(255,255,255,1) 100%);
+		position: relative;
+	}
+
+	div.ommig-box {
+		height: 55vw;
+		width: 75vw;
+		margin-top: 6vw;
+		margin-right: 20vw;
+		margin-left: 5vw;
+		margin-bottom: 10vw;
+		background-color:#193A55;
+		border-radius: 5px;
+		border:1px solid transparent;
+		box-shadow:  0 0px 0px 0 black, 0 20px 40px 0 black;
+
+				}
+
+	h2.overskrift {
+ 		color: white;
+ 		font-size: 2.8vw;
+ 		font-weight: normal;
+ 		margin-top: 6vw;
+ 		margin-left: 2.5vw;
+ 	}
+
+ 	h1.h1 {
+ 		color: white;
+ 		font-size: 4vw;
+ 		margin-left: 2.5vw;
+ 		margin-top: 2vw;
+		margin-bottom: 2vw;
+ 	}
+
+ 	h2.tekst {
+ 		color: white;
+ 		font-size: 2.5vw;
+ 		font-weight: normal;
+ 		margin-top: 2vw;
+ 		margin-left: 2.5vw;
+ 		font-weight: lighter;
+		width: 70vw;
+ }
+
+ h2.tekst2{
+	 color: white;
+	 font-size: 2.8vw;
+	 font-weight: normal;
+	 margin-top: 1vw;
+	 margin-left: 2vw;
+	 font-weight: lighter;
+	 width: 50vw;
+ }
+
+ 	img.profil {
+ 		float: right;
+ 		margin-top: 25vw;
+ 		margin-right: 6vw;
+		height: 60vw;
+
+ }
+
+   img.ikon {
+ 		height: 65px;
+ 		width: 500px;
+ 		margin-top: 2vw;
+ 		margin-left: 0vw;
+ }
+
+ 		img.me {
+	 	 height: 40vw;
+	   width: 18vw;
+	 	 margin-top: 15vw;
+	 	 margin-left: 70vw;
+ }
+
+ /*portfolio siden*/
+
+ 	h1.portfolio {
+ 		color: white;
+ 		font-size: 5vw;
+ 		margin-top: 5vw;
+ 		margin-left: 5vw;
+ 		letter-spacing: 2px;
+ 	}
+
+ 	div.content-box1 {
+ 		height: 40vw;
+ 		width: 75vw;
+ 		margin-top: 6vw;
+ 		margin-left: 20vw;
+ 		margin-bottom: 10vw;
+ 		background-color:#193A55;
+ 		border-radius: 10px;
+ 		border:1px solid transparent;
+ 		box-shadow:  0 0px 0px 0 black, 0 20px 40px 0 black;
+
+ 		  }
+
+ 	div.content-box2 {
+ 		height: 40vw;
+ 		width: 75vw;
+ 		margin-top: 6vw;
+ 		margin-right: 20vw;
+ 		margin-left: 5vw;
+ 		margin-bottom: 10vw;
+ 		background-color:#193A55;
+ 		border-radius: 10px;
+ 		border:1px solid transparent;
+ 		box-shadow:  0 0px 0px 0 black, 0 20px 40px 0 black;
+
+ 			}
+
+	div.content-box3 {
+		height: 40vw;
+		width: 75vw;
+		margin-top: 6vw;
+ 		margin-left: 20vw;
+ 		margin-bottom: 10vw;
+ 		background-color:#193A55;
+		border-radius: 10px;
+ 		border:1px solid transparent;
+ 		box-shadow:  0 0px 0px 0 black, 0 20px 40px 0 black;
+
+		 		  }
+
+ 	div.b-box1 {
+ 		height: 40vw;
+ 		width: 90vw;
+ 		margin-top: 10vw;
+ 		margin-left: 5vw;
+ 		margin-bottom: 12vw;
+ 	}
+
+	div.b-box2 {
+	 height: 35vw;
+	 width: 90vw;
+	 margin-top: 10vw;
+	 margin-left: 5vw;
+	 margin-bottom: 5vw;
+	}
+
+ 	h1.overskrift1 {
+ 		color: white;
+ 		margin-left:4vw;
+ 		margin-top: 5vw;
+ 		font-size: 2.8vw;
+ 	}
+ 	h1.overskrift2 {
+ 		color: white;
+ 		margin-right:15vw;
+ 		margin-top: 4vw;
+ 		font-size: 2.8vw;
+ 		float: right;
+ 	}
+
+ 	h1.overskrift3 {
+ 		color: white;
+ 		margin-left:5vw;
+ 		margin-top: 3vw;
+ 		font-size: 2.8vw;
+ 		float: left;
+ 	}
+
+	h1.overskrift4 {
+		color: white;
+		margin-left:5vw;
+		margin-top: 0.5vw;
+		font-size: 2.8vw;
+		float: left;
+	}
+
+	h1.overskrift5 {
+		color: white;
+		margin-left:5vw;
+		margin-top: 5vw;
+		font-size: 2.8vw;
+		float: left;
+	}
+
+
+ 	h2.client1 {
+ 		color:white;
+ 		margin-left: 4vw;
+ 		margin-top: 0.8vw;
+ 		font-size: 2vw;
+ 		font-weight: normal;
+ 	}
+ 	h2.client2 {
+ 		color:white;
+ 		margin-right: 13vw;
+ 		margin-top: 1vw;
+ 		font-size: 2vw;
+ 		font-weight: normal;
+ 		float: right;
+ 	}
+
+ 	h2.client3 {
+ 		color:white;
+ 		margin-left: 5vw;
+ 		margin-top: 16.5vw;
+ 		font-size: 2vw;
+ 		font-weight: normal;
+
+ 	}
+
+	h2.client4 {
+		color:white;
+		margin-left: 5vw;
+		margin-top: 1vw;
+		font-size: 2vw;
+		font-weight: normal;
+		float: left;
+
+	}
+
+	h2.client5 {
+		color:white;
+		margin-left: 5vw;
+		margin-top: 18.5vw;
+		font-size: 2vw;
+		font-weight: normal;
+
+	}
+
+ 	h3.beskrivelse1 {
+ 		color: white;
+ 		margin-top: 0.8vw;
+ 		margin-left: 4vw;
+ 		font-weight: lighter;
+ 		font-size: 1.8vw;
+		width: 28vw;
+ 	}
+
+ 	h3.beskrivelse2 {
+ 		color: white;
+ 		margin-top: 1vw;
+ 		margin-right: 8vw;
+ 		font-weight: lighter;
+ 		font-size: 1.8vw;
+ 		float: right;
+		width: 30vw;
+ 	}
+
+ 	h3.beskrivelse3 {
+ 		color: white;
+ 		margin-top: 0.7vw;
+ 		margin-left: 5vw;
+ 		font-weight: lighter;
+ 		font-size: 1.8vw;
+ 		float: left;
+		width: 23vw;
+ 	}
+
+	h3.beskrivelse4 {
+ 		color: white;
+ 		margin-top: 0.7vw;
+ 		margin-left: 5vw;
+ 		font-weight: lighter;
+ 		font-size: 1.8vw;
+ 		float: left;
+		width: 25vw;
+ 	}
+
+	h3.beskrivelse5 {
+		color: white;
+		margin-top: 0.7vw;
+		margin-left: 5vw;
+		font-weight: lighter;
+		font-size: 1.8vw;
+		float: left;
+		width: 23vw;
+	}
+
+ 	img.studiebolig {
+ 		height: 20vw;
+ 		width: 34vw;
+ 		margin-top: 7vw;
+ 		float: right;
+ 		margin-right: 5vw;
+ 	}
+
+ 	img.jul {
+ 		height: 38vw;
+ 		width: 29vw;
+ 		margin-left: 13vw;
+ 		margin-top: 4vw;
+ 		float:left;
+ 	}
+
+ 	img.mig1 {
+ 		height: 30vw;
+ 		width: 21vw;
+ 		margin-top: 5vw;
+ 		margin-right: 9vw;
+ 		float:right;
+ 	}
+
+	 video.haj {
+		 width: 40vw;
+		 height: 28vw;
+		 float: left;
+		 margin-right: 4vw;
+		 margin-left: 8vw;
+		 margin-top: 2vw;
+	 }
+
+	 video.promo {
+		 width: 36vw;
+		 height: 27vw;
+		 margin-top: 5vw;
+		 margin-right: 5vw;
+		 float: right;
+	 }
+
+	 /*kontakt siden*/
+
+	 h1.kontakt {
+		 color: white;
+		 font-size: 9vw;
+		 margin-top: 15vw;
+		 margin-left: 22vw;
+	 }
+
+	 p.formere {
+		 color: white;
+		 font-size: 4vw;
+		 font-weight: lighter;
+		 text-align: center;
+		 margin-top: 2vw;
+		 margin-bottom: 5vw;
+	 }
+
+	 p.info {
+		 color: white;
+		 font-size: 5vw;
+		 margin-top: 1vw;
+		 text-align: center;
+		 font-weight: lighter;
+	 }
+
+	img.ikon2 {
+		width: 10vw;
+		margin-left: 45vw;
+		margin-top: 5vw;
+	}
+
+
+
+
+ }
